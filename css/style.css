@@ -1,0 +1,80 @@
+.textRedI{
+  color: red !important;
+}
+.textGreenI{
+  color: green !important;
+}
+body {
+  background-image: repeating-radial-gradient(skyblue 0%, whitesmoke 100%);
+}
+/*this media query keeps the table responsive*/
+  @media screen and (max-width: 992px) {
+    table, #head {
+      display: block;
+      width: 90% !important;
+      margin: auto !important;
+    }
+    table > *, table tr, table td, table th {
+      display: block;
+    }
+    table thead {
+      display: none;
+    }
+    table tbody tr {
+      height: auto;
+      padding: 15px 0;
+    }
+    table tbody tr td, th {
+      text-align: right;
+    }
+    table tbody tr td:last-child {
+      margin-bottom: 0;
+    }
+     table tbody tr th:first-child {
+      margin-top: 10px;
+    }
+    table tbody tr td::before, th::before {
+      font-family: OpenSans-Regular;
+      font-size: 14px;
+      color: #999999;
+      line-height: 1.2;
+      float: left;
+    }
+    tbody tr {
+      font-size: 14px;
+    }
+    tr{
+      box-shadow: 10px 5px 18px #e7e7e7;
+      border-radius: 20px;
+
+    }
+    table tbody tr th:nth-child(1)::before {
+        content: "Rank";
+
+      }
+      table tbody tr td:nth-child(2)::before {
+        content: "Name(ID)";
+      }
+      table tbody tr td:nth-child(3)::before {
+        content: "Price-USD";
+      }
+      table tbody tr td:nth-child(4)::before {
+        content: "Price-NGN";
+      }
+      table tbody tr td:nth-child(5)::before {
+        content: "Price-BTC";
+      }
+      table tbody tr td:nth-child(6)::before {
+        content: "Change 1h(%)";
+      }
+      table tbody tr td:nth-child(7)::before{
+        content: "Change 24h(%)"
+      }
+      table tbody tr td:nth-child(8)::before{
+        content: "Change 7d(%)"
+      }
+      table tbody tr td:nth-child(9)::before{
+        content: "Last Updated"
+      }
+
+  }
